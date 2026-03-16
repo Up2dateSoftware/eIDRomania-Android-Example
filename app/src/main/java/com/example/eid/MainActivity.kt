@@ -66,7 +66,7 @@ import com.up2date.eidromania.eidromaniasdk.EIDRomaniaReader
 import com.up2date.eidromania.eidromaniasdk.EIDRomaniaSDK
 import com.up2date.eidromania.eidromaniasdk.NFCManager
 import com.example.eid.ui.components.CardDataDisplay
-import com.example.eid.ui.theme.MaterialTheme
+import com.example.eid.ui.theme.EIDRomaniaSampleTheme
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withTimeout
@@ -91,7 +91,7 @@ class MainActivity : ComponentActivity() {
 
         enableEdgeToEdge()
         setContent {
-            MaterialTheme {
+            EIDRomaniaSampleTheme {
                 when {
                     !EIDRomaniaSDK.isInitialized() -> LicenseRequiredScreen()
                     nfcAdapter == null -> NoNfcSupportScreen()

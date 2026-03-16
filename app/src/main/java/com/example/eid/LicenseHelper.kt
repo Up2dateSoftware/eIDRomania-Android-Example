@@ -3,7 +3,6 @@ package com.example.eid
 import android.content.Context
 import android.util.Log
 import com.up2date.eidromania.eidromaniasdk.EIDRomaniaSDK
-import com.up2date.eidromania.eidromaniasdk.licensing.LicenseFeature
 
 /**
  * Helper utility for displaying license status information.
@@ -30,13 +29,9 @@ object LicenseHelper {
 
         val licenseInfo = EIDRomaniaSDK.getLicenseInfo()
         if (licenseInfo != null) {
-            Log.i(TAG, "  License Tier: ${licenseInfo.tier.value.uppercase()}")
             Log.i(TAG, "  Issued To: ${licenseInfo.issuedTo}")
-            Log.i(TAG, "")
-            Log.i(TAG, "  Available Features:")
-            licenseInfo.features.forEach { feature ->
-                Log.i(TAG, "    ✓ ${feature.value}")
-            }
+            Log.i(TAG, "  Issued At: ${licenseInfo.issuedAt}")
+            Log.i(TAG, "  Expires At: ${licenseInfo.expiresAt}")
         } else {
             Log.w(TAG, "  ⚠️  No license information available")
         }
