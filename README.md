@@ -80,7 +80,7 @@ dependencyResolutionManagement {
 
 // app/build.gradle.kts
 dependencies {
-    implementation("com.up2date.eidromania:eidromania-android-sdk:1.0.5")
+    implementation("com.up2date.eidromania:eidromania-android-sdk:1.0.6")
 }
 ```
 
