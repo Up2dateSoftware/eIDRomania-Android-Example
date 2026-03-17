@@ -33,7 +33,7 @@ class EIDExampleApplication : Application() {
          * For production builds, use:
          * private val LICENSE_KEY = BuildConfig.EID_LICENSE_KEY
          */
-        private const val LICENSE_KEY = "YOUR_LICENSE_KEY_HERE"
+        private const val LICENSE_KEY = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJSb21hbmlhbkVJRFNESyIsInN1YiI6ImNvbS5leGFtcGxlLmVpZCIsImlhdCI6MTc3MzY1OTg0MiwiZXhwIjoxNzc4ODQzODQyLCJqdGkiOiJlODI4ZGE0NS1jOGE2LTRjOTEtYjk5NS03MDFjOTVmYmI0NzkiLCJidW5kbGVJZCI6ImNvbS5leGFtcGxlLmVpZCIsImNvbXBhbnkiOiJUZXN0IiwiZmVhdHVyZXMiOlsicGFzc3BvcnRSZWFkaW5nIiwiaWRDYXJkUmVhZGluZyIsIm9jclNjYW5uaW5nIiwiY3NjYVZhbGlkYXRpb24iLCJiaW9tZXRyaWNFeHRyYWN0aW9uIiwiYWR2YW5jZWRTZWN1cml0eSJdLCJ0eXBlIjoiZGV2ZWxvcG1lbnQiLCJ2ZXJzaW9uIjoiMS4wIiwibWF4RGV2aWNlcyI6MTAwMH0.I8PP8Tnn74wOSi2-OCSdqUl3XH0k5JFZ5dT91x0_4fRNt8I-uES7T5BwjeQYmm1oUVBwD3PNBfi999m-0ILJt2aqP1k9AGWUHp3W_o6CJdn0PwTbIcdt3SsKnXIyTh2ZjTmRx2MK57LiSUpf0iet3QzDDmpR9lDJYUkvvSq8uZ2JO-mYSkJEtPkjt0xg5SYyX7wf8V1MDWFxXtrGkdmj59htoiXlPOonzYgc9RLhCD7a25ZdK_zFj4-FC9hsUiEWI0WfJQSfioCh0iILQPz4C7PreJI09HiB-qbrLE6BmloTpvyAK8KY6gyWroCisURpHOIILf7bsneePIibOq2PAA"
 
         /**
          * Set to true to enable debug logging
