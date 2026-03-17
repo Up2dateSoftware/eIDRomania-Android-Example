@@ -1,7 +1,4 @@
 pluginManagement {
-    plugins {
-        id("com.google.cloud.artifactregistry.gradle-plugin") version "2.2.1"
-    }
     repositories {
         google {
             content {
@@ -20,15 +17,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        // eIDRomania Android SDK (public read access)
         maven {
             url = uri("https://europe-west1-maven.pkg.dev/eid-romania/eid-romania-sdk")
-            credentials {
-                username = "_json_key_base64"
-                password = "YOUR_SDK_KEY_HERE" // provided by Up2Date Software SRL with your license
-            }
-            authentication {
-                create<BasicAuthentication>("basic")
-            }
         }
     }
 }
